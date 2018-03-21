@@ -1,0 +1,5 @@
+To create new component:
+
+>ng g component my-component
+
+g=generate
