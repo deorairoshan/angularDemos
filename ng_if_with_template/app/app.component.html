@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<ul>
+
+  <li *ngFor="let i of array">{{i}}</li>
+</ul>
+<p *ngIf ="isTrue">Hello</p>
+<p *ngIf ="title != 'app' && false">True</p>
+
+<p *ngIf ="isTrue; else firstTemplate">Hello</p>
+<br/>
+<p *ngIf ="isTrue; then firstTemplate else secondTemplate">Hello</p>
+<ng-template  #firstTemplate>This is first template</ng-template>
+<ng-template  #secondTemplate>This is Second template</ng-template>
