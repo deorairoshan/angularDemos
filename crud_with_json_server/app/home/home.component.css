@@ -1,0 +1,16 @@
+table, th, td{
+  border: 0.5pt solid black;
+  font-size: 18px;
+  padding: 2px;
+}
+
+a{
+  font-size: 18px;
+  color: blue;
+}
+
+a:hover{
+  color: blue;
+  cursor: pointer;
+}
+

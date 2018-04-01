@@ -1,0 +1,12 @@
+Install json server:
+  npm intall -g json-server
+
+Create Json File:
+  products.json
+
+Start server with json file:
+  json-server -p 5555 products.json
+
+
+create component:
+ng g component com_name

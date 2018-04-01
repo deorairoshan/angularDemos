@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Moto G5s Plus",
+      "price": 15000
+    },
+    {
+      "id": 102,
+      "name": "Lenovo K5 Note",
+      "price": 12000
+    },
+    {
+      "id": 103,
+      "name": "iPhone 8",
+      "price": 50000
+    },
+    {
+      "name": "Redmi 5",
+      "price": "8000",
+      "id": 105
+    }
+  ]
+}
