@@ -1,0 +1,25 @@
+<a routerLink="/"> Back </a>
+<h2>
+  Add New Product
+</h2>
+
+<!--<form id="formNewProduct" name="formNewProduct" #productData = "ngForm" (ngSubmit) = "addNewProduct(productData.value)">
+  <label>Name: </label><input type="text" name="name" id="name" placeholder="Name" ngModel><br>
+  <label>Price: </label><input type="text" name="price" id="price" placeholder="Price" ngModel><br>
+  <input type="submit" value="Add Product">
+</form>-->
+
+<form
+       [formGroup] = "form" novalidate
+       #productData = "ngForm" (ngSubmit) = "addNewProduct(productData.value)" >
+  <label>Name: </label><input type="text" name="name" id="name" placeholder="Name" ngModel formControlName="name"
+                              [ngStyle]=" !form.get('name').valid  && formSubmitAttempt ?  {'background-color': 'red'} : {'background-color': 'white'}" /><br>
+<!--  <span *ngIf="!form.get('name').valid" style="color:red"> Please Enter First Name (Minimum 2 Characters)</span>-->
+  <label>Price: </label><input type="text" name="price" id="price" placeholder="Price" ngModel formControlName="price" /><br>
+  <input type="submit" value="Add Product" >
+</form>
+
+<br><br>
+<h3 *ngIf="isAdded">
+  {{confirmationMsg}}
+</h3>

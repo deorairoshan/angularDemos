@@ -1,0 +1,3 @@
+https://loiane.com/2017/08/angular-reactive-forms-trigger-validation-on-submit/
+
+https://stackoverflow.com/questions/39893430/angular-2-reactive-forms-trigger-validation-on-submit

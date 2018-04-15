@@ -1,0 +1,11 @@
+.error-msg {
+  background-color:red;
+}
+.fix-error-icon {
+  color: white;
+}
+
+.ng-invalid:not(form)  {
+  //background-color:red;
+}
+
